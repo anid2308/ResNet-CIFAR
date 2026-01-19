@@ -1,0 +1,4 @@
+# Install PyTorch + TorchVision separately (match versions to avoid runtime mismatches).
+# Then install these small dependencies:
+numpy
+tqdm

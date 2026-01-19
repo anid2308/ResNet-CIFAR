@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Artifacts
+checkpoints/
+outputs/
+
+# Data (optional)
+data/
+
+# OS
+.DS_Store
