@@ -60,7 +60,7 @@ def main() -> None:
     optimizer = optim.SGD(model.parameters(), lr=cfg.lr, momentum=cfg.momentum, weight_decay=cfg.weight_decay)
     scheduler = CosineAnnealingLR(optimizer, T_max=cfg.epochs)
 
-    scaler = amp.GradScaler(device_type="cuda", enabled=(device.type == "cuda" and cfg.use_amp))
+    scaler = amp.GradScaler(enabled=(device.type == "cuda" and cfg.use_amp))
 
     best_acc = 0.0
     best_ckpt = None
