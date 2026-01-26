@@ -17,5 +17,35 @@ outputs/
 # Data (optional)
 data/
 
-# OS
-.DS_Store
+# Sensitive files and credentials
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.ppk
+.ssh/
+config
+credentials
+.aws/
+
+# Tokens and secrets
+.hf_token
+hf_token.txt
+.huggingface/
+.github/
+secrets.json
+.secrets
+.secrets/
+*.vault
+
+# Git config with embedded credentials
+.git/config.local
+
+# IDE and local configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
